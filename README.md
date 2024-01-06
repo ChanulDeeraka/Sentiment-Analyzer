@@ -1,2 +1,2 @@
 # Sentiment-Analyzer
-Advanced Sentiment Analyzer
+Advanced Sentiment Analyzer using MERN Stack + Pytorch
