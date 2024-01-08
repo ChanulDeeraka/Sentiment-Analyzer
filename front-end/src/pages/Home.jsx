@@ -1,10 +1,8 @@
 import React from "react";
-import AppNavbar from "../components/AppNavbar";
+import UserRegistration from "../components/UserRegistration";
+import "../assets/appcss/homecss.css";
+import "../assets/appcss/navcss.css";
 
 export default function home() {
-  return (
-    <div>
-      <AppNavbar />
-    </div>
-  );
+  return <UserRegistration />;
 }
