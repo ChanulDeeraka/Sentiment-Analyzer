@@ -1,0 +1,33 @@
+/* Add this to your styles */
+.navbar-shrink {
+    width: 79%;
+    margin-left: auto;
+    /* Adjust the height according to your design */
+    transition: width 0.2s;
+    /* Add a smooth transition effect */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+    .navbar-shrink {
+        width: 100%;
+        /* Adjust the width for smaller screens */
+    }
+}
+
+/* YourComponent.css */
+.small-box-link {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.small-box-link:hover {
+  background-color: #758aff;
+}
