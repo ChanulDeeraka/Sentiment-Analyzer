@@ -1,0 +1,27 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Sentiment Anaylzer Back-End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChanulDeeraka/Sentiment-Analyzer.git"
+  },
+  "keywords": [
+    "Sentiment"
+  ],
+  "author": "Chanul Gunathilake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChanulDeeraka/Sentiment-Analyzer/issues"
+  },
+  "homepage": "https://github.com/ChanulDeeraka/Sentiment-Analyzer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}

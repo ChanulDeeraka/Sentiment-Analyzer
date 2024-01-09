@@ -7,20 +7,18 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+
 import {
   faHome,
   faGauge,
   faBolt,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 export default function AppNavbar() {
   const targetExpand = "false"; // Set the breakpoint you want to use
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const toggleShow = () => setShow((s) => !s);
+  const [show, setShow] = useState(true);
 
   const addAlert = () => {
     setShow(show ? false : true);
@@ -44,7 +42,6 @@ export default function AppNavbar() {
             placement="start"
             backdrop={false}
             scroll={true}
-            onClick={addAlert}
             className="bg-dark text-white"
             style={{ border: "none", marginTop: "55px", maxWidth: "280px" }}
           >
@@ -68,7 +65,7 @@ export default function AppNavbar() {
                 </Form>
               </Nav> */}
               <Nav className="justify-content-center flex-grow-1 pe-5">
-                <Nav.Link href="#action1" className="small-box-link">
+                <Nav.Link href="/" className="small-box-link">
                   <FontAwesomeIcon icon={faHome} className="me-2 ms-5" />
                   <span>Home</span>
                 </Nav.Link>
@@ -76,11 +73,11 @@ export default function AppNavbar() {
                   <FontAwesomeIcon icon={faGauge} className="me-2 ms-5 " />
                   Dashboard
                 </Nav.Link>
-                <Nav.Link href="#action1" className="small-box-link">
+                <Nav.Link href="analyzer" className="small-box-link">
                   <FontAwesomeIcon icon={faBolt} className="me-2 ms-5" />
                   Analyzer
                 </Nav.Link>
-                <Nav.Link href="#action2" className="small-box-link">
+                <Nav.Link href="/user-profile" className="small-box-link">
                   <FontAwesomeIcon icon={faUser} className="me-2 ms-5" />
                   Profile
                 </Nav.Link>

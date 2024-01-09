@@ -1,0 +1,9 @@
+.userprofileimg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.userprofileimg:hover {
+    transform: scale(1.2);
+}
