@@ -20,22 +20,15 @@ export default function SentimentAnalyzer() {
   return (
     <>
       {" "}
-      <Card>
+      <Card id="analyzer">
         <Card.Body>
           <Row>
             <Col className="col-sm-10 d-flex align-items-center">
               <Form.Control
                 size="md"
                 type="text"
-                placeholder="Enter Your Thought......"
-                style={{
-                  background: "transparent",
-                  border: "none",
-                  borderBottom: "none", // You can adjust the color
-                  borderRadius: "0",
-                  boxShadow: "none",
-                  outline: "none",
-                }}
+                placeholder="Enter Your Thought..."
+                id="analyzerinput"
               />
             </Col>
             <Col className="col-sm-2 d-flex align-items-center justify-content-center">

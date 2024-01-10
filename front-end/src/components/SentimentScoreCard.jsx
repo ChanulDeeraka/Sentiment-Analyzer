@@ -6,14 +6,22 @@ import Neutral from "../assets/images/neutral.png";
 
 export default function SentimentScoreCard(props) {
   return (
-    <Card className="mt-4">
+    <Card className="mt-4 shadow">
       <Card.Body className="p-5">
         <Row>
           <Col className="col-sm-8 d-flex align-items-center">
             <Card.Text>{props.SentimentTxt}</Card.Text>
           </Col>
           <Col className="col-sm-2 d-flex justify-content-center align-items-center">
-            <span style={{ fontWeight: "bold", fontSize: "1.5rem" }}>{props.SentimentScore}</span>
+            <span
+              style={{
+                fontWeight: "bold",
+                fontSize: "1.5rem",
+                color: "#3B8FF3",
+              }}
+            >
+              {props.SentimentScore}
+            </span>
           </Col>
           <Col className="col-sm-2 d-flex align-items-center justify-content-center">
             <Image

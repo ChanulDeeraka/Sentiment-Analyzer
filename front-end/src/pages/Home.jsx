@@ -1,8 +1,8 @@
 import React from "react";
 import UserRegistration from "../components/UserRegistration";
-import "../assets/appcss/homecss.css";
-import "../assets/appcss/navcss.css";
+import AppNavbar from "../components/SystemPanel/AppNavbar";
+import AppFooter from "../components/SystemPanel/AppFooter";
 
-export default function home() {
+export default function Home() {
   return <UserRegistration />;
 }

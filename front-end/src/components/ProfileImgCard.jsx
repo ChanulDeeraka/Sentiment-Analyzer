@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import CardGroup from "react-bootstrap/CardGroup";
 import UserProfileImage from "../assets/images/user-profile.png";
 import "../assets/appcss/userprofilecss.css";
@@ -32,11 +33,16 @@ export default function ProfileImgCard() {
             </Badge>
           </div>
           <div className="my-5">
-            <FontAwesomeIcon
-              className="p-2 btn btn-primary mx-2"
-              icon={faPenToSquare}
-            />
-            <FontAwesomeIcon className="p-2 btn btn-danger" icon={faTrash} />
+            <Link to="/dashboard">
+              {" "}
+              <FontAwesomeIcon
+                className="p-2 btn btn-primary mx-2"
+                icon={faPenToSquare}
+              />
+            </Link>
+            <Link to="/">
+              <FontAwesomeIcon className="p-2 btn btn-danger" icon={faTrash} />
+            </Link>
           </div>
         </Card.Text>
       </Card.Body>

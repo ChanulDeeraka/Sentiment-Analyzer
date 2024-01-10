@@ -6,33 +6,15 @@ import "../assets/appcss/searchbarcss.css";
 
 export default function SearchBar() {
   return (
-    <Card>
+    <Card className="shadow" id="searchbar">
       <Card.Body>
         <Row>
-          <Col className="col-sm-10 d-flex align-items-center">
-            <Form.Control
-              size="md"
-              type="text"
-              placeholder="Large text"
-              style={{
-                background: "transparent",
-                border: "none",
-                borderBottom: "none", // You can adjust the color
-                borderRadius: "0",
-                boxShadow: "none",
-                outline: "none",
-              }}
-            />
-          </Col>
-          <Col className="col-sm-2 d-flex align-items-center justify-content-center">
-            <Image
-              src={Search}
-              type="button"
-              alt="Image Alt Text"
-              fluid
-              className="searchbaricon"
-            />
-          </Col>
+          <Form.Control
+            size="md"
+            type="text"
+            placeholder="Search..."
+            id="searchinput"
+          />
         </Row>
       </Card.Body>
     </Card>

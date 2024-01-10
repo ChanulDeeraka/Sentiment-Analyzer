@@ -11,7 +11,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #7c90ff;
+    background: #3B8FF3;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
@@ -63,4 +63,23 @@
     100% {
         transform: translate(24px, 0);
     }
+}
+
+#analyzer {
+    background-color: #1E1E2C;
+}
+
+#analyzerinput {
+    background-color: #1E1E2C;
+    border: none;
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: white;
+}
+
+#analyzerinput::placeholder {
+    color: white;
+    /* Replace with your desired placeholder color */
 }
